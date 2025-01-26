@@ -1,1 +1,8 @@
-
+python-telegram-bot==20.3
+pymongo==4.2.0
+pillow==9.1.0
+motor==3.1.0
+dotenv==0.19.2
+requests==2.27.1
+beautifulsoup4==4.10.0
+Pyrogram==1.2.9
