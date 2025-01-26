@@ -1,1 +1,43 @@
-
+{
+  "name": " AᴜᴛᴏFɪʟᴛᴇʀ-Bᴏᴛ",
+  "description": " AᴜᴛᴏFɪʟᴛᴇʀ-Bᴏᴛ",
+  "keywords": ["telegram", "bot", "auto-filter"],
+  "repository": "https://github.com/Aj22426/AutoFilter-Bot", 
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot API Token",
+      "required": true
+    },
+    "DATABASE_URI": {
+      "description": "MongoDB connection string or other database URI",
+      "required": true
+    },
+    "ADMIN_ID": {
+      "description": "Your Telegram User ID for administrative tasks",
+      "required": true
+    },
+    "LOG_CHANNEL": {
+      "description": "Channel ID for logging bot activities",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name for the bot",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "Free"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'Deployment complete. Bot is starting...' && python bot.py"
+  },
+  "addons": [
+    {
+      "plan": "mongolab:sandbox",
+      "as": "MONGODB_URI"
+    }
+  ]
+}
