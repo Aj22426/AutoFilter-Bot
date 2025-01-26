@@ -1,23 +1,21 @@
 class script(object):  
-    START_TXT = """<b>✨ Hᴇʟʟᴏ {user}.
-
-Mʏ Nᴀᴍᴇ Is {bot}.
-
-I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ Oʀ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ</b>"""
+    START_TXT = """<b>ʜᴇʏ {}, {}\n\nɪ ᴵ ᴬᴹ ᴬᵁᵀᴼᶠᴵᴸᵀᴱᴿ ᴮᴼᵀ.𝐴𝐷𝐷 𝑀𝐸 𝐼𝑁 𝑌𝑂𝑈𝑅 𝐺𝑅𝑂𝑈𝑃 𝐴𝑁𝐷 𝑀𝐴𝐾𝐸 𝑀𝐸 𝐴𝑆 𝐴𝐷𝑀𝐼𝑁 𝑇𝑂 𝐺𝐸𝑇 𝐹𝐼𝐿𝐸𝑆
     
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
 
-    ABOUT_TXT = """<b>✯ Mʏ ɴᴀᴍᴇ: {}
-✯ Dᴇᴠᴇʟᴏᴩᴇʀ: <a herf=https://t.me/Mr_MKN>ᴍʀ.ᴍᴋɴ ᴛɢ</a>
-✯ Cᴏᴅᴇᴅ Oɴ: ᴩʏᴛʜᴏɴ/ᴩʏʀᴏɢʀᴀᴍ
-✯ Mʏ DᴀᴛᴀBᴀꜱᴇ: ᴍᴏɴɢᴏ-ᴅʙ
-✯ Mʏ Sᴇʀᴠᴇʀ: ᴀɴʏᴡʜᴇʀᴇ
-✯ Mʏ Vᴇʀꜱɪᴏɴ: ᴩʀᴏꜰᴇꜱꜱᴏʀ-ʙᴏᴛ ᴠ4.5.0</b>"""
+    ABOUT_TXT = """<b><blockquote>⍟[ ᴍʏ ᴅᴇᴛᴀɪʟꜱ ]⍟</blockquote>
+ ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
+‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href={https://t.me/moviesxyz_ofcl}>ᴍᴏᴠɪᴇsxʏᴢ™</a> 
+‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
+‣ ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 3</a> 
+‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
+‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://koyeb.com'>ᴋᴏʏᴇʙ</a> 
+‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ1.0 [sᴛᴀʙʟᴇ]></b>"""
    
     SOURCE_TXT = """<b>NOTE:</b>
-- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/MrMKN/PROFESSOR-BOT>𝐏𝐑𝐎𝐅𝐄𝐒𝐒𝐎𝐑-𝐁𝐎𝐓</a>
+- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/Aj22426/AutoFilter-Bot>AᴜᴛᴏFɪʟᴛᴇʀ-Bᴏᴛ</a>
 
-<b>ᴅᴇᴠ: <a herf=https://t.me/Mr_MKN>ᴍʀ.ᴍᴋɴ ᴛɢ</a></b>"""
+<b>ᴅᴇᴠ: <a herf=https://t.me/moviesxyz_ofcl>ᴍᴏᴠɪᴇsxʏᴢ™</a></b>"""
 
     FILE_TXT = """<b>➤ Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>
 
@@ -226,7 +224,14 @@ Wᴇʟᴄᴏᴍᴇ ᴛᴏ {chat}.
 🎭 Gᴇɴʀᴇꜱ: {genres}
 📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
 🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10"""
-   
+
+PROGRESS_BAR = """\n
+╭━━━━❰ File Is Renaming... ❱━➣
+┣⪼ 🗂️ : {1} | {2}
+┣⪼ ⏳️ : {0}%
+┣⪼ 🚀 : {3}/s
+┣⪼ ⏱️ : {4}
+╰━━━━━━━━━━━━━━━➣ """
   
  
 
